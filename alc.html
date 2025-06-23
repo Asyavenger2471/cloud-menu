@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cloud</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  function scrollMenu(amount) {
+    const menu = document.querySelector('.navbar');
+    menu.scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+<body>
+
+  <div class="menu-wrapper">
+    <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
+
+    <div class="navbar">
+      <a href="snidanky.html" class="nav-button">Сніданки</a>
+      <a href="startery.html" class="nav-button">Стартери</a>
+      <a href="osnovnistravy.html" class="nav-button">Основні страви</a>
+      <a href="salaty.html" class="nav-button">Салати</a>
+      <a href="child.html" class="nav-button">Дитяче меню</a>
+      <a href="bezalc.html" class="nav-button">Безалкогольні напої</a>
+      <a href="alc.html" class="nav-button active">Алкогольні напої</a>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollMenu(200)">&#10095;</button>
+  </div>
+  <div class="pidmenu">
+    <a href="alc.html" class="button active">Коктейлі</a>
+    <a href="vino.html" class="button">Вино</a>
+    <a href="glintvein.html" class="button">Глінтвейн</a>
+    <a href="pivo.html" class="button">Пиво</a>
+    <a href="gin.html" class="button">Джин</a>
+    <a href="viskey.html" class="button">Віскі</a>
+    <a href="vodka.html" class="button">Водка</a>
+    <a href="rom.html" class="button">Ром</a>
+  </div>
+  </div>
+
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/aruba.jpg" alt="Aryba">
+    <div class="item-details">
+      <div class="item-title">Aryba</div>
+      <div class="item-description">
+        (ананасовий ром, бейліс, пюре кокос, ананасовий сік, лимонний фреш)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">230 мл</div>
+        <div class="item-price">370 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/osen.jpg" alt="Оcean">
+    <div class="item-details">
+      <div class="item-title">Оcean</div>
+      <div class="item-description">
+        (Джин, сироп бузини, лікер блю Кюрасао, сауер мікс)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">100 мл</div>
+        <div class="item-price">330 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/bery_souver.jpg" alt="Berry Sour ">
+    <div class="item-details">
+      <div class="item-title">Berry Sour </div>
+      <div class="item-description">
+        (рожевий джин, сироп малина, лимонний фреш)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">150 мл</div>
+        <div class="item-price">250 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/visckey_souver.jpg" alt="Віскі Sour">
+    <div class="item-details">
+      <div class="item-title">Віскі Sour</div>
+      <div class="item-description">
+        (бурбон, сауер мікс)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">100 мл</div>
+        <div class="item-price">270 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/gin_garden.jpg" alt="Gin Garden ">
+    <div class="item-details">
+      <div class="item-title">Gin Garden </div>
+      <div class="item-description">
+        (джин, сироп огірок, лимонний фреш, імбірний ель)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">230 мл</div>
+        <div class="item-price">360 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/maura.jpg" alt="Maura">
+    <div class="item-details">
+      <div class="item-title">Maura</div>
+      <div class="item-description">
+        (джин, пюре полуниці, пюре вишні, вода алое, вермут, сауер мікс)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">180 мл</div>
+        <div class="item-price">340 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/nigroni.jpg" alt="Negroni">
+    <div class="item-details">
+      <div class="item-title">Negroni</div>
+      <div class="item-description">
+        (вермут, джин, бітер)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">100 мл</div>
+        <div class="item-price">270 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt=" Negroni Flower">
+    <div class="item-details">
+      <div class="item-title"> Negroni Flower</div>
+      <div class="item-description">
+        (малиновий сироп, бітер, вермут, джин, тонік, просекко )
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">320 мл</div>
+        <div class="item-price">370 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/porno_star.jpg" alt="Porno Star">
+    <div class="item-details">
+      <div class="item-title">Porno Star</div>
+      <div class="item-description">
+        (ванільна горілка, пюре маракуя, сауер мікс, просекко)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">160 мл</div>
+        <div class="item-price">290 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/sivila_flovers.jpg" alt="Sevilla Flowers">
+    <div class="item-details">
+      <div class="item-title">Sevilla Flowers</div>
+      <div class="item-description">
+        (апельсиновий джин, пюре юзу, лікер тріпл сек, ананасовий сік, яблучний сік, сауер мікс)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">150 мл</div>
+        <div class="item-price">290 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/aperol.jpg" alt="Aperol Spritz">
+    <div class="item-details">
+      <div class="item-title">Aperol Spritz</div>
+      <div class="item-description">
+        (сироп апероль, апероль, тонік, просекко)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 мл</div>
+        <div class="item-price">280 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/hugo.jpg" alt="Hugo">
+    <div class="item-details">
+      <div class="item-title">Hugo</div>
+      <div class="item-description">
+        (лікер бузина, содова, просекко)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">280 мл</div>
+        <div class="item-price">290 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/alc/koktel/moxito.jpg" alt="Majito">
+    <div class="item-details">
+      <div class="item-title">Majito</div>
+      <div class="item-description">
+        (білий ром, спрайт, сауер мікс, м’ята)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">280 мл</div>
+        <div class="item-price">240 грн</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

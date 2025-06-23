@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cloud</title>
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+<script>
+  function scrollMenu(amount) {
+    const menu = document.querySelector('.navbar');
+    menu.scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+  }
+
+</script>
+
+<body>
+
+  <div class="menu-wrapper">
+    <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
+
+    <div class="navbar">
+      <a href="snidanky.html" class="nav-button">Сніданки</a>
+      <a href="startery.html" class="nav-button">Стартери</a>
+      <a href="osnovnistravy.html" class="nav-button active">Основні страви</a>
+      <a href="salaty.html" class="nav-button">Салати</a>
+      <a href="child.html" class="nav-button">Дитяче меню</a>
+      <a href="bezalc.html" class="nav-button">Безалкогольні напої</a>
+      <a href="alc.html" class="nav-button">Алкогольні напої</a>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollMenu(200)">&#10095;</button>
+
+  </div>
+  <div class="pidmenu">
+    <a href="osnovnistravy.html" class="button active">Основні страви</a>
+    <a href="varenuku.html" class="button">Вареники</a>
+
+  </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/osnovni/kur_grydka.jpg" alt=" Куряча грудка з  сиром моцарелла під сирним соусом ">
+    <div class="item-details">
+      <div class="item-title"> Куряча грудка з сиром моцарелла під сирним соусом </div>
+      <div class="item-description">
+        (куряче філе мариноване, моцарела, сирний соус)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">270 г</div>
+        <div class="item-price">280 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/burger_krevetka.jpg" alt="Бургер з креветкою та соусом тартар поливається гарячим соусом ">
+    <div class="item-details">
+      <div class="item-title">Бургер з креветкою та соусом тартар поливається гарячим соусом </div>
+      <div class="item-description">
+        (булочка Гамбургер, креветка, соус тар тар, соус вершково-сирний, мікс салату ,картопля фрі)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">350 г</div>
+        <div class="item-price">410 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/burger_z_rvan_yalyvichenou.jpg" alt="Бургер з яловичиною поливається  гарячим соусом ">
+    <div class="item-details">
+      <div class="item-title">Бургер з яловичиною поливається гарячим соусом </div>
+      <div class="item-description">
+        (булочка Гамбургер, яловичина рвана, вершково-сирний соус, мікс салату, картопля фрі)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">400 г</div>
+        <div class="item-price">365 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/burger_z_2kotlet.jpg" alt="Бургер з подвійною котлетою з яловичини">
+    <div class="item-details">
+      <div class="item-title">Бургер з подвійною котлетою з яловичини</div>
+      <div class="item-description">
+        (булочка бріош обсмажена на грилі, 2 котлети з яловичини,сир чеддер, томати,перець халапенью, вершковий соус з
+        перцем чилі)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">340 г</div>
+        <div class="item-price">420 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/stake_losos_ovochi.jpg" alt="Стейк лосося з овочами">
+    <div class="item-details">
+      <div class="item-title">Стейк лосося з овочами</div>
+      <div class="item-description">
+        (лосось філе, морква бебі, спаржа, капуста броколі, соус берл-блан)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">460 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/stake_svynyna_jvjchi.jpg" alt=" Стейк зі свинини з овочами гриль">
+    <div class="item-details">
+      <div class="item-title"> Стейк зі свинини з овочами гриль</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">420 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/ribay_z_percem.jpg" alt="Стейк Рібай з печеним перчиком">
+    <div class="item-details">
+      <div class="item-title">Стейк Рібай з печеним перчиком</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">640 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/rebra_z_kart.jpg" alt="Ребра теріякі з картоплею по-селянськи">
+    <div class="item-details">
+      <div class="item-title">Бургер з подвійною котлетою з яловичини</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">350 г</div>
+        <div class="item-price">430 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/pasta_karbonara.jpg" alt=" Паста Карбонара ">
+    <div class="item-details">
+      <div class="item-title"> Паста Карбонара </div>
+      <div class="item-description">
+        (паста, вершки,пармезан,бекон)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">290 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/pasta_krevetka.jpg" alt=" Паста  з креветками">
+    <div class="item-details">
+      <div class="item-title"> Паста з креветками</div>
+      <div class="item-description">
+        (паста, вершки, пармезан, креветки )
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">350 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/pasta_syr.jpg" alt="Паста з сиром">
+    <div class="item-details">
+      <div class="item-title">Паста з сиром</div>
+      <div class="item-description">
+        (паста, вершки, моцарела, горгонзола , пармезан)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">200 г</div>
+        <div class="item-price">280 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/krevetky_panco.jpg" alt=" Креветки панко">
+    <div class="item-details">
+      <div class="item-title"> Креветки панко</div>
+      <div class="item-description">
+        (тигрові креветки,соус солодкий чилі,мікс салат)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">200 г</div>
+        <div class="item-price">290 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/sibas_z_pure.jpg" alt=" Сібас з картопляним пюре">
+    <div class="item-details">
+      <div class="item-title"> Сібас з картопляним пюре</div>
+      <div class="item-description">
+        (філе сібаса на вешковому маслі з вином,картопля пюре,лимон)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">350 г</div>
+        <div class="item-price">470 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt="Сібас з овочами">
+    <div class="item-details">
+      <div class="item-title">Сібас з овочами</div>
+      <div class="item-description">
+        (цілий жарений сібас з провансальськими травами і овочами гриль,лимон)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">470 г</div>
+        <div class="item-price">750 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/fishcake_z_pure.jpg" alt=" Фішкейк з ніжним картопляним пюре">
+    <div class="item-details">
+      <div class="item-title"> Фішкейк з ніжним картопляним пюре</div>
+      <div class="item-description">
+        (рибні котлети з філе сібасу, креветка, томат черрі)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">250 г</div>
+        <div class="item-price">330 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/osnovni/soup_mashrooms.jpg" alt="  Суп грибний">
+    <div class="item-details">
+      <div class="item-title"> Суп грибний</div>
+      <div class="item-description">
+        (гриби печериці, білі сухі, вершки, пармезан, чіабата)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">250 грн</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/osnovni/yxa.jpg" alt=" Норвезька уха">
+    <div class="item-details">
+      <div class="item-title"> Норвезька уха</div>
+      <div class="item-description">
+        (філе лосося, томати, томати в'ялені, курячий бульйон, морква, цибуля-порей, чіабата)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">310 грн</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/osnovni/kur_bulon.jpg" alt=" Курячий бульйон">
+    <div class="item-details">
+      <div class="item-title"> Курячий бульйон</div>
+      <div class="item-description">
+        ( курячий бульйон, філе куряче, макарони, яйце, чіабата)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">170 грн</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

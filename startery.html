@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cloud</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  function scrollMenu(amount) {
+    const menu = document.querySelector('.navbar');
+    menu.scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+<body>
+
+  <div class="menu-wrapper">
+    <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
+
+    <div class="navbar">
+      <a href="snidanky.html" class="nav-button ">Сніданки</a>
+      <a href="startery.html" class="nav-button active">Стартери</a>
+      <a href="osnovnistravy.html" class="nav-button">Основні страви</a>
+      <a href="salaty.html" class="nav-button">Салати</a>
+      <a href="child.html" class="nav-button">Дитяче меню</a>
+      <a href="bezalc.html" class="nav-button">Безалкогольні напої</a>
+      <a href="alc.html" class="nav-button">Алкогольні напої</a>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollMenu(200)">&#10095;</button>
+
+  </div>
+  <div class="menu-item">
+    <img src="images/startery/krevetky_shafran.jpg" alt="Креветка у винно-шафрановому соусі">
+    <div class="item-details">
+      <div class="item-title">Креветка у винно-шафрановому соусі</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">240 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt="Асорті сирів та м'ясних делікатесів">
+    <div class="item-details">
+      <div class="item-title">Асорті сирів та м'ясних делікатесів</div>
+      <div class="item-description">
+        (хамон, фует, горганзола, пармезан, суміш горіхова)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">490 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/startery/dgampleng_smageniy.jpg" alt="Дамплінги з креветкою">
+    <div class="item-details">
+      <div class="item-title">Дамплінги з креветкою</div>
+      <div class="item-description">
+        (смажені або варені, подаються з соусом понзу, солодким чилі)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">180 г</div>
+        <div class="item-price">230 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/startery/dgampleng_vareny.jpg" alt="Дамплінги з куруою">
+    <div class="item-details">
+      <div class="item-title">Дамплінги з куркою</div>
+      <div class="item-description">
+        (смажені або варені, подаються з соусом понзу, солодким чилі)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">230 г</div>
+        <div class="item-price">230 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/startery/bruscetta_losos.jpg" alt="Брускета з лососем">
+    <div class="item-details">
+      <div class="item-title">Брускета з лососем</div>
+      <div class="item-description">
+        (авокадо, сир Філадельфія, лосось, огірок)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">150 г</div>
+        <div class="item-price">190 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/startery/profitroli_ktevetka.jpg" alt="Профітролі з креветками">
+    <div class="item-details">
+      <div class="item-title">Профітролі з креветкою</div>
+      <div class="item-description">
+        (кульки з заварного тіста з креветкою всередині)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">100 г</div>
+        <div class="item-price">160 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/startery/profitroli_ryba.jpg" alt="Профітролі з лососем">
+    <div class="item-details">
+      <div class="item-title">Профітролі з лососем</div>
+      <div class="item-description">
+        (кульки з заварного тіста з лососем всередині)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">100 г</div>
+        <div class="item-price">160 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt="Порційна чіабата">
+    <div class="item-details">
+      <div class="item-title">Порційна чіабата</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">60 г</div>
+        <div class="item-price">35 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/startery/bulochka_temna.jpg" alt="Французька булочка темна">
+    <div class="item-details">
+      <div class="item-title">Французька булочка темна</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">1 шт</div>
+        <div class="item-price">35 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/startery/bulochca_svitla.jpg" alt="Французька булочка світла">
+    <div class="item-details">
+      <div class="item-title">Французька булочка світла</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">1 шт</div>
+        <div class="item-price">35 грн</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

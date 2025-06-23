@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cloud</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  function scrollMenu(amount) {
+    const menu = document.querySelector('.navbar');
+    menu.scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+
+  }
+</script>
+
+<body>
+
+  <div class="menu-wrapper">
+    <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
+
+    <div class="navbar">
+      <a href="snidanky.html" class="nav-button">Сніданки</a>
+      <a href="startery.html" class="nav-button">Стартери</a>
+      <a href="osnovnistravy.html" class="nav-button">Основні страви</a>
+      <a href="salaty.html" class="nav-button">Салати</a>
+      <a href="child.html" class="nav-button">Дитяче меню</a>
+      <a href="bezalc.html" class="nav-button active">Безалкогольні напої</a>
+      <a href="alc.html" class="nav-button">Алкогольні напої</a>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollMenu(200)">&#10095;</button>
+  </div>
+  </div>
+
+  <div class="pidmenu">
+    <a href="tea.html" class="button">Чай</a>
+    <a href="coffe.html" class="button">Кава</a>
+    <a href="napoi.html" class="button active">Напої</a>
+    <a href="lymonady.html" class="button">Фірмові лимонади</a>
+    <a href="freshi.html" class="button">Фреші</a>
+  </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="#" alt="Bordjomi">
+    <div class="item-details">
+      <div class="item-title">Bordjomi</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">330 мл</div>
+        <div class="item-price">80 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt=" Моршинська">
+    <div class="item-details">
+      <div class="item-title">Моршинська</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">330 мл</div>
+        <div class="item-price">70 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt="Cola">
+    <div class="item-details">
+      <div class="item-title">Cola</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">250 мл</div>
+        <div class="item-price">60 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt="Fanta">
+    <div class="item-details">
+      <div class="item-title">Fanta</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">250 мл</div>
+        <div class="item-price">50 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt="Sprite">
+    <div class="item-details">
+      <div class="item-title">Sprite</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">250 мл</div>
+        <div class="item-price">60 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt="Schwepes">
+    <div class="item-details">
+      <div class="item-title">Schwepes</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">250 мл</div>
+        <div class="item-price">60 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="#" alt="Сік в асортименті ">
+    <div class="item-details">
+      <div class="item-title">Сік в асортименті </div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">250 мл</div>
+        <div class="item-price">50 грн</div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>

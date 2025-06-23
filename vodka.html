@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Cloud</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  function scrollMenu(amount) {
+    const menu = document.querySelector('.navbar');
+    menu.scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+  }
+  </script>
+  
+<body>
+
+  <div class="menu-wrapper">
+    <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
+
+    <div class="navbar">
+      <a href="snidanky.html" class="nav-button">Сніданки</a>
+      <a href="startery.html" class="nav-button">Стартери</a>
+      <a href="osnovnistravy.html" class="nav-button">Основні страви</a>
+      <a href="salaty.html" class="nav-button">Салати</a>
+      <a href="child.html" class="nav-button">Дитяче меню</a>
+      <a href="bezalc.html" class="nav-button">Безалкогольні напої</a>
+      <a href="alc.html" class="nav-button active">Алкогольні напої</a>
+    </div>
+    
+    <button class="scroll-btn right" onclick="scrollMenu(200)">&#10095;</button>
+  </div>
+      <div class="pidmenu">
+    <a href="alc.html" class="button">Коктейлі</a>
+    <a href="vino.html" class="button">Вино</a>
+    <a href="glintvein.html" class="button">Глінтвейн</a>
+    <a href="pivo.html" class="button">Пиво</a>
+    <a href="gin.html" class="button">Джин</a>
+    <a href="viskey.html" class="button">Віскі</a>
+    <a href="vodka.html" class="button active">Водка</a>
+    <a href="rom.html" class="button">Ром</a>
+  </div>
+  </div>
+
+   <div class="menu-item">
+    <!-- <img src="" alt=""> -->
+    <div class="item-details">
+      <div class="item-title">Finlandia</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">50 мл</div>
+        <div class="item-price">90 грн</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

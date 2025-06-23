@@ -1,0 +1,337 @@
+body {
+  background-image: url(../images/backgraund-1.jpg);
+  /* background-size: 1920px; */
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7d3e0;
+
+}
+h1{
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  /* background-color: #e46db0; */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  /* адаптивна ширина */
+  height: auto;
+  /* пропорційна висота */
+  padding: 5vw;
+  /* відступи залежать від ширини вікна */
+  margin-top: 50px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Стилізована кнопка */
+.pretty-button {
+  /* width: 350px;
+    height: 50px; */
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 2px solid #e46db0;
+  background-color: white;
+  color: #e46db0;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 80%;
+  /* Адаптивна ширина */
+  max-width: 350px;
+  /* Максимальна ширина */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* Тінь для краси */
+}
+
+/* Ховер-ефект */
+.pretty-button:hover {
+  background-color: #e46db0;
+  color: white;
+}
+
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  overflow-x: auto;
+  /* Дозволяє горизонтальну прокрутку */
+  white-space: nowrap;
+  /* Забороняє перенос кнопок */
+  padding: 10px 0;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* легка тінь під меню */
+  position: sticky;
+  /* меню буде "прилипати" до верху */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Стилізована кнопка */
+.nav-button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 2px solid #e46db0;
+  background-color: white;
+  color: #e46db0;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+  width: 80%;
+  /* Адаптивна ширина */
+  max-width: 150px;
+  /* Максимальна ширина */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* Тінь для краси */
+  flex-shrink: 0;
+  /* щоб кнопки не стискались */
+}
+
+
+.nav-button:hover,
+.nav-button.active {
+  background-color: #e46db0;
+  color: white;
+}
+
+.menu-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* background-color: white; */
+  padding: 5px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  justify-content: center;
+  /* Центрування для мобільних */
+  max-width: 100%;
+}
+
+.scroll-menu {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 10px;
+  flex: 1;
+}
+
+.scroll-menu::-webkit-scrollbar {
+  display: none;
+  /* ховаємо скролбар */
+}
+
+.scroll-btn {
+  /* background-color: white; */
+  border: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 10;
+  color: #e46db0;
+  transition: 0.2s;
+}
+
+.scroll-btn:hover {
+  color: #b23c8b;
+}
+
+.left {
+  margin-right: 5px;
+}
+
+.right {
+  margin-left: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 4px 9px;
+  font-size: 14px;
+  border-radius: 30px;
+  border: 2px solid #e46db0;
+  background-color: white;
+  color: #e46db0;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  min-width: 120px;
+  /* мінімальна ширина кнопки */
+
+  align-items: center;
+}
+
+.button:hover,
+.button.active {
+  background-color: #e46db0;
+  color: white;
+}
+/* Вимикає автоматичний скрол при фокусі на кнопках */
+.navbar .nav-button:focus,
+.pidmenu .button:focus {
+  outline: none;
+  scroll-behavior: auto;
+}
+
+.pidmenu {
+  display: flex;
+  overflow-x: auto;
+  /* position: relative; */
+  align-items: center;
+  /* background-color: white; */
+  padding: 4px 9px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 16px;
+}
+.pidmenu::-webkit-scrollbar {
+  display: none; /* приховати скрол в Chrome */
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: auto;
+  width: 90%;
+  /* Ширина блоку адаптується до екрану */
+  /* height: 30%; */
+  max-height: auto;
+  align-items: center;
+  margin: 20px auto 20px auto;
+  /* центрування блоку */
+  border: 3px solid #e46db0;
+  gap: 0;
+}
+
+.menu-item img {
+  width: 35%;
+  /* Зображення займає всю ширину контейнера */
+  max-width: auto;
+  /* Максимальна ширина зображення, щоб не було занадто великим */
+
+  height: 35%;
+  /* border-radius: px; */
+  /* object-fit: cover; */
+  margin: 0;
+
+}
+
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  /* Займає всю доступну ширину для тексту */
+  text-align: left;
+  /* Центрує весь текст всередині item-details */
+
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e46db0;
+  margin-bottom: 5px;
+}
+
+.item-description {
+  font-size: 12px;
+  color: #e46db0;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.item-price-info {
+  display: flex;
+  justify-content: space-between;
+  /* Вага зліва, ціна справа */
+  align-items: flex-end;
+  /* Вирівнює по нижньому краю */
+  margin-top: auto;
+  width: 100%;
+  /* Щоб вага і ціна могли розійтися по краях */
+}
+
+.item-weight {
+  font-size: 13px;
+  color: #e46db0;
+  font-weight: bold;
+  text-align: left;
+  /* Можна додати, якщо треба вирівняти лише вагу ліворуч */
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e46db0;
+  text-align: right;
+  /* Можна додати, якщо треба вирівняти лише ціну праворуч */
+}
+
+
+
+
+@media (max-width: 768px) {
+  img {
+    max-width: 80%;
+    padding: 20px
+  }
+
+  body {
+    background-size: cover;
+    background-position: center;
+
+
+  }
+
+  .content {
+    padding: 20px;
+    margin-top: -40px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .pretty-button {
+    max-width: 350px;
+    width: 60%;
+    /* height: 35px; */
+    font-size: 87%;
+  }
+
+
+
+
+}

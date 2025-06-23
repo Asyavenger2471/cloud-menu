@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Cloud</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  function scrollMenu(amount) {
+    const menu = document.querySelector('.navbar');
+    menu.scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+  }
+  
+  </script>
+  
+<body>
+
+  <div class="menu-wrapper">
+    <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
+
+    <div class="navbar">
+      <a href="snidanky.html" class="nav-button">Сніданки</a>
+      <a href="startery.html" class="nav-button">Стартери</a>
+      <a href="osnovnistravy.html" class="nav-button ">Основні страви</a>
+      <a href="salaty.html" class="nav-button">Салати</a>
+      <a href="child.html" class="nav-button">Дитяче меню</a>
+      <a href="bezalc.html" class="nav-button active">Безалкогольні напої</a>
+      <a href="alc.html" class="nav-button">Алкогольні напої</a>
+    </div>
+    
+    <button class="scroll-btn right" onclick="scrollMenu(200)">&#10095;</button>
+   
+  </div>
+     <div class="pidmenu">
+<a href="kraftovi.html" class="button active">Крафтовий чаї</a>
+<a href="tea.html" class="button">Чай</a>
+<a href="tea.html" class="button">Чай</a>
+<a href="tea.html" class="button">Чай</a>
+<a href="tea.html" class="button">Чай</a>
+
+    </div>
+  
+</body>
+</html>

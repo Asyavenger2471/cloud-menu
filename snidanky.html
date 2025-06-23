@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cloud</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  function scrollMenu(amount) {
+    const menu = document.querySelector('.navbar');
+    menu.scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+ 
+  }
+</script>
+
+<body>
+
+  <div class="menu-wrapper">
+    <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
+
+    <div class="navbar">
+      <a href="snidanky.html" class="nav-button active">Сніданки</a>
+      <a href="startery.html" class="nav-button">Стартери</a>
+      <a href="osnovnistravy.html" class="nav-button">Основні страви</a>
+      <a href="salaty.html" class="nav-button">Салати</a>
+      <a href="child.html" class="nav-button">Дитяче меню</a>
+      <a href="bezalc.html" class="nav-button">Безалкогольні напої</a>
+      <a href="alc.html" class="nav-button">Алкогольні напої</a>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollMenu(200)">&#10095;</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="images/snidanki/vafli_z_kyrka.jpg" alt="Вафлі з куркою BBQ">
+    <div class="item-details">
+      <div class="item-title">Вафлі з куркою BBQ</div>
+      <div class="item-description">
+        (вафлі, курка BBQ, яйце куряче, соус перцевий, соус солодкий чілі)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">230 г</div>
+        <div class="item-price">230 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/snidanki/sckambl_losos.jpg" alt="Скрамбл з лососем">
+    <div class="item-details">
+      <div class="item-title">Скрамбл з лососем</div>
+      <div class="item-description"> (омлет з 2 яєць і сметани, лосось, чіабатта, мікс салату, томат чері)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">160 г</div>
+        <div class="item-price">310 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/snidanki/sckrambl_soseg.jpg" alt="Скрамбл з нюрберзькими сосисками">
+    <div class="item-details">
+      <div class="item-title">Скрамбл з нюрберзькими сосисками</div>
+      <div class="item-description">
+        (омлет з 2 яєць і сметани, нюрнберзькі сосиски, чіабатта, мікс салату, томат чері)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">200 г</div>
+        <div class="item-price">270 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/snidanki/vivsianka_na_cocos.jpg" alt="Вівсянка на кокосі з гранолою та ягодами">
+    <div class="item-details">
+      <div class="item-title">Вівсянка на кокосі з гранолою та ягодами</div>
+      <div class="item-description">
+        (пластівці вівсяні, гранола горіх/мед, молоко кокосове, ягоди, соус малиновий) </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 г</div>
+        <div class="item-price">135 грн</div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="images/snidanki/surnyky.jpg" alt="Рожеві сирники з малиновим соусом та солодкою ватою">
+    <div class="item-details">
+      <div class="item-title">Рожеві сирники з малиновим соусом та солодкою ватою</div>
+      <div class="item-description">
+        (ягоди, цукрова вата, соус малиновий)
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">290 г</div>
+        <div class="item-price">215 грн</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

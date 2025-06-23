@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cloud</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  function scrollMenu(amount) {
+    const menu = document.querySelector('.navbar');
+    menu.scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+<body>
+
+  <div class="menu-wrapper">
+    <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
+
+    <div class="navbar">
+      <a href="snidanky.html" class="nav-button">Сніданки</a>
+      <a href="startery.html" class="nav-button">Стартери</a>
+      <a href="osnovnistravy.html" class="nav-button">Основні страви</a>
+      <a href="salaty.html" class="nav-button">Салати</a>
+      <a href="child.html" class="nav-button">Дитяче меню</a>
+      <a href="bezalc.html" class="nav-button active">Безалкогольні напої</a>
+      <a href="alc.html" class="nav-button">Алкогольні напої</a>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollMenu(200)">&#10095;</button>
+  </div>
+  </div>
+
+  <div class="pidmenu">
+    <a href="tea.html" class="button">Чай</a>
+    <a href="coffe.html" class="button">Кава</a>
+    <a href="napoi.html" class="button">Напої</a>
+    <a href="lymonady.html" class="button active">Фірмові лимонади</a>
+    <a href="freshi.html" class="button">Фреші</a>
+  </div>
+  </div>
+  
+    <div class="menu-item">
+    <img src="images/bezalc/lymonady/lymonad_grysha_imbir.jpg" alt="Груша-імбир">
+    <div class="item-details">
+      <div class="item-title">Груша-імбир</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 мл</div>
+        <div class="item-price">130 грн</div>
+      </div>
+    </div>
+  </div>
+    <div class="menu-item">
+    <img src="images/bezalc/lymonady/lymonad_marrackuia.jpg" alt="Маракуя">
+    <div class="item-details">
+      <div class="item-title">Маракуя</div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 мл</div>
+        <div class="item-price">110 грн</div>
+      </div>
+    </div>
+  </div>
+    <div class="menu-item">
+    <img src="images/bezalc/lymonady/lymonad_polunyca.jpg" alt="Полуниця-базилік ">
+    <div class="item-details">
+      <div class="item-title">Полуниця-базилік </div>
+      <div class="item-description">
+
+      </div>
+      <div class="item-price-info">
+        <div class="item-weight">300 мл</div>
+        <div class="item-price">110 грн</div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
