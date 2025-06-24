@@ -15,9 +15,29 @@
       behavior: 'smooth'
     });
   }
+function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+      } else {
+        sidebar.style.width = "250px";
+      }
+    }
+  
 </script>
 
 <body>
+   <!-- Хедер з логотипом -->
+  <header class="site-header">
+    <img src="images/logo.png" alt="Logo" class="logo" onclick="toggleSidebar()" />
+  </header>
+
+  <!-- Бічна панель -->
+  <div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <a href="index.html">Головна</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
 
   <div class="menu-wrapper">
     <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
@@ -49,7 +69,7 @@
     </div>
   </div>
   <div class="menu-item">
-    <img src="#" alt="Асорті сирів та м'ясних делікатесів">
+    <img src="images/startery/asorty.jpg" alt="Асорті сирів та м'ясних делікатесів">
     <div class="item-details">
       <div class="item-title">Асорті сирів та м'ясних делікатесів</div>
       <div class="item-description">
