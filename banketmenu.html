@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+<script>
+  function scrollMenu(amount) {
+    const menu = document.querySelector('.navbar');
+    menu.scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+   
+  }
+function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+      } else {
+        sidebar.style.width = "250px";
+      }
+    }
+
+</script>
+    
 <body>
 
   <!-- Хедер з логотипом -->
@@ -183,3 +203,4 @@
 <script src="js/menu-scrol.js"></script>
 
 </body>
+
