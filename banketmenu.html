@@ -9,6 +9,19 @@
 </head>
 
 <body>
+
+  <!-- Хедер з логотипом -->
+  <header class="site-header">
+    <img src="images/logo.png" alt="Logo" class="logo" onclick="toggleSidebar()" />
+  </header>
+
+  <!-- Бічна панель -->
+  <div id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <a href="index.html">Головна</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
+    
     <div class="menu-wrapper">
         <button class="scroll-btn left" onclick="scrollMenu(-200)">&#10094;</button>
 
@@ -168,4 +181,5 @@
     
 
 <script src="js/menu-scrol.js"></script>
+
 </body>
